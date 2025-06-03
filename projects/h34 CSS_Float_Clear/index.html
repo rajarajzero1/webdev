@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Float_Clear</title>
+    <style>
+
+        /* We don't used Float & Clear */
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img {
+            float: left;
+            /* float: right; */
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            /* clear: right; */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="8038.jpg" width="230px" alt="" srcset="">
+        <div class="card">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, obcaecati veniam velit harum repellat
+            magnam totam deserunt commodi autem rem vitae ea iusto hic mollitia laboriosam incidunt animi, voluptatem,
+            quos error recusandae excepturi a.
+        </div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque qui consectetur iusto
+            inventore dolore sint voluptatibus numquam maxime laborum. Ad facere voluptatum voluptatem officiis minus,
+            maxime inventore dolor placeat neque perspiciatis itaque. Doloribus dicta quis consectetur accusantium
+            laborum suscipit, laboriosam aliquid quod et ab odit nobis voluptatem nesciunt sapiente enim, expedita ipsa
+            placeat magni dignissimos laudantium molestiae optio provident nulla? Itaque, incidunt fugit? Laborum
+            ratione fugit cumque voluptates iste accusamus natus commodi autem quasi officia dolorem dicta impedit,
+            repudiandae non ab, quam omnis beatae iusto suscipit ipsam saepe explicabo quibusdam molestiae. Maiores,
+            voluptates dicta porro quo asperiores pariatur nesciunt nihil eligendi accusantium eos voluptate quasi
+            possimus assumenda ipsam sit at perferendis soluta? Ullam id possimus, voluptate praesentium iste assumenda
+            culpa aliquid beatae non quas corrupti. Dicta, tempore sapiente aperiam quae doloribus pariatur quaerat quia
+            animi quod commodi repellendus autem saepe quidem, vitae illo maiores quam magnam reiciendis, officia
+            doloremque quas quis! Nam maxime rerum minima, eaque non illum, reprehenderit molestias voluptate tempore
+            dignissimos ducimus doloribus vero commodi dolorem illo odit. Labore culpa, nemo odit nisi veniam distinctio
+            quibusdam deleniti reprehenderit eaque dignissimos earum libero laudantium iusto voluptate cum! Eius
+            molestiae perspiciatis in non, molestias quos id tempora minus ullam, similique sunt, repellendus unde
+            mollitia placeat sed enim nobis? Vitae sunt ad vero reprehenderit repellendus nesciunt, maiores voluptas
+            quisquam, repellat in quidem ullam cum tempora minima corporis facilis nostrum a, dolorem sapiente nemo!
+            Voluptatum, ea quod. Odit, repudiandae dicta similique minus officia iure reiciendis consequatur quas facere
+            perspiciatis nemo cum voluptatibus suscipit nulla obcaecati dignissimos dolores ex beatae aspernatur quo
+            unde aut? Nostrum repudiandae voluptate nihil vel necessitatibus ullam odio tenetur, minus mollitia ducimus
+            harum est ipsam exercitationem quam veniam nam temporibus aspernatur placeat consectetur nemo corporis
+            aperiam ratione, velit asperiores. Assumenda deleniti error maxime, repudiandae tempore ad nam, eligendi
+            earum architecto fuga harum totam tempora reiciendis corrupti rerum cumque consectetur numquam nisi vitae
+            quae temporibus provident amet saepe quisquam. Rem similique, magni odit minus atque fugiat, unde eos,
+            minima optio assumenda consequuntur.</div>
+        <div class="card">Card 1</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Specificity_Cascade</title>
+    <style>
+        /* The Cascade Algorithm */
+        /* Rules
+        1.Position and order of appearance
+        2.Specificity
+        3.Origin
+        4.Importance */
+        /* The specificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The specificity of this selector is 1+10=11 */
+        h1.yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        /* overright */
+        .cpurple
+        {
+            color: purple;
+        }
+
+        /* overright */
+        /* .cred{ 
+            color: red;
+        } */
+            /* The specificity of this selector is 1+10+10+10+10=41 */
+        a.harryclass.rohan-class[href]:hover{
+            color:blueviolet:
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline style > ID Selector > class or Attribute Selector > Element Selector > Universal Selector -->
+
+    <!-- Specificity Calculation
+        To calculate specificity, assign a value to each part of the selector -->
+
+    <!-- * Universal Selector:0
+        * Element Selectors and pseudo-elements:1
+        * Class Selectors, attribute Selectors, and pseudo-classed:10
+        * ID selectors:100
+        * Inline styles:1000 -->
+    
+    <div> 
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+    </div>
+
+</body>
+</html>

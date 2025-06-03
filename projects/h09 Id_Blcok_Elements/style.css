@@ -1,0 +1,14 @@
+/* .(dot) ka matlab class aur #(hash) ka matlab id */
+/* .(dot) means class & #( Hashtag) means Id --> */
+
+.red {
+    color: red;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+#firstdiv {
+    /* background-color: red; */
+}

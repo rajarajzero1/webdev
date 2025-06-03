@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More_On_CSS_Selectors</title>
+    <style>
+        /* only in first Box will apply */
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        /* apply on all boxes */
+        /* .boxes:first-child{
+            background-color: red;
+        } */
+
+        /* .box::first-line{
+            color: yellow;
+        } */ 
+
+        /* .boxes *{
+            color: blue;
+            border: 2px solid black;
+        } */
+
+        /* apply on all "grouping of all selectors" */
+        /* p, a, .box, [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        } */
+
+        /* odd,even can used */
+        /* .box:nth-child(even){
+            color: blue;
+        } */
+
+        /* can 1,2,3 */
+        /* .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+        /* pseudo elements lots of using */
+        .boxes::before{
+            content: "Harry is Good";
+            color: blue;
+        }
+        
+        /* pseudo elements lots of using */
+        .boxes::after{
+            content: "Sigma Web is Awesome";
+            color: red;
+        }
+
+        .boxes::selection{
+            background-color: black;
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: purple;
+            font-size: 45px;
+        }
+
+        input::placeholder{
+            color: blue;
+            font-size: 6px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">1.Hey I'am a First Box </div>
+        <div data-color="primary" class="box">2.Hey I'am a Box</div>
+        <div class="box">3.Hey I'am a Box</div>
+        <input type="text" placeholder="Type Your Name Here">
+    </div>
+
+</body>
+</html>

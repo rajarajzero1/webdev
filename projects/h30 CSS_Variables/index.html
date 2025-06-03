@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Variables</title>
+    <style>
+        /* Declaretion of Global Variables */
+        :root{
+            --color: rgb(255, 0, 247);
+            --seccolor: rgb(231,164,246);
+            /* default padding */
+            --defpad:23px;
+
+            /* --defop:0.2; */
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            /* Using of Variables */
+            background-color: var(--color);
+        }
+
+        ul{
+            /* What if variable not found then by default blue color will apply */
+            background-color: var(--color, blue);
+            /* display: flex; */
+            border: 2px solid var(--color);
+        }
+
+        ul li:first-child{
+            /* Overight of Local Variable of Global Variable */
+            --color:rgb(181, 187, 187);
+            background-color: var(--color);
+        }
+
+        ul li{
+            /* Using of Variables */
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 12px solid var(--seccolor)
+        }
+
+        .container{
+            /* Using of Varialbes */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati ratione aliquid eos quos culpa nisi magni dolorem? Hic assumenda doloremque iure optio iusto, omnis, mollitia at atque fugit sit cumque repudiandae ad odio, rerum in aspernatur blanditiis rem reprehenderit. Optio rerum repellendus omnis exercitationem.
+    </div>
+
+</body>
+</html>

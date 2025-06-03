@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Selectors</title>
+    <style>
+
+        /* Element Selector */
+        div{
+            /* property */
+            background-color: red;
+        }
+
+        /* Class Selector */
+        .one{
+            background-color: yellow;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* Child Selector */
+        div > p {
+            color: blue;
+            background-color: skyblue;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: blue;
+            background-color: skyblue;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow
+        }
+        a:link{
+            color: green
+        }
+        
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: violet;
+        }
+
+        p:first-child{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="Two">
+        <p>i'm Two</p>
+        <p>i'm Three</p>
+    </main>
+    <!-- child Selector -->
+    <div>
+        <p>CSS_Selectors allows us to choose specific elements and apply styles
+        to them.</p>
+    </div>
+
+    <!-- Class Selector Declare -->
+    <div class="one">
+        I'm a div 
+    </div>
+
+    <!-- Id_Selector Declare -->
+    <div id="green">
+        I'm a another div
+    </div>
+
+    <!-- Descendant Selector -->
+    <div>
+        <article>
+            <p>
+                i'm a Descendant Selector
+            </p>
+        </article>
+    </div>
+
+<a href="https://www.google.com">Go to Google</a>
+<a href="https://www.Facebook.com">Go to Facebook</a>
+</body>
+</html>
