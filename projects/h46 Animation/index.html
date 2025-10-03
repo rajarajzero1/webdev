@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Animation</title>
+    <style>
+        .container {
+            background-color: rgb(13, 133, 133);
+            height: 80vh;
+            width: 30vw;
+        }
+
+        .box {
+            width: 34px;
+            height: 45px;
+            /* background-color: aqua; */
+            animation-name: Eyeof;
+            animation-duration: 1s;
+            /* animation-iteration-count: 3; */
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: cubic-bezier(0, 0, 0.02, 0.96);/* animation-delay: 11s; */
+            /* animation-delay: 1s; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */
+
+            /* All in one animation */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+            /* animation: Eyeof 3s ease-in-out 2s infinite; */
+            animation: Eyeof 3s ease-in-out 1 forwards;
+
+            /* multiple animation */
+            animation: Eyeof 2s ease-in-out 3s 1,
+                       Eyeof2 3s ease-in-out 3s 1;
+        }
+
+        /* for simple properties used transition */
+        /* for complex properties used animation */
+
+        /* For animation in css we used keyframes */
+        @keyframes Eyeof {
+            from {
+                background-color: red;
+                /* transform: translateX(10px); */
+            }
+
+            to {
+                background-color: yellow;
+                /* transform: translateX(1000px); */
+            }
+        }
+
+        @keyframes Eyeof2 {
+            0% {
+                transform: rotate(100deg);
+            }
+
+            20% {
+                transform: rotate(200deg);
+            }
+
+            50% {
+                transform: rotate(220deg);
+            }
+
+            80% {
+                transform: rotate(300deg);
+            }
+
+            100% {
+                transform: rotate(310deg);
+            }
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
