@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_Filters</title>
+    <style>
+        img{
+            /* filter: blur(10px); */
+        }
+
+        .img1{
+            filter: brightness(122%) contrast(59%);
+        }
+
+        .img2{
+            filter: invert(1);
+            filter: opacity(0.6);
+        }
+
+        .img3{
+            filter: grayscale(20%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="2015.jpg" alt="">
+        <img class="img2" src="IMG_2015.jpg" alt="">
+        <img class="img3" src="5184.jpg" alt="">
+    </div>
+</body>
+</html>
